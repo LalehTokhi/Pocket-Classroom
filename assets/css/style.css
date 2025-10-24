@@ -1,0 +1,196 @@
+/* assets/css/styles.css */
+:root {
+  --primary: #0d6efd;
+  --bg: #ffffff;
+  --muted: #6c757d;
+
+  /* dark mode dark darkkkkkkkk */
+  --bg-dark: #071026;
+  --card-dark: #0f1724;
+  --text-dark: #e6eef8;
+  --muted-dark: #a0a9b8;
+  --navbar-dark: #071026;
+}
+
+/* Dark Mood */
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Navbar */
+body.dark .navbar {
+  background: var(--navbar-dark) !important;
+  color: var(--text-dark);
+}
+
+body.dark .navbar .nav-link {
+  color: var(--text-dark) !important;
+}
+
+body.dark .navbar .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Cards */
+body.dark .card {
+  background: var(--card-dark);
+  color: var(--text-dark);
+  border-color: #1e2a3a;
+}
+
+/* Flash cards */
+body.dark .flashcard-front {
+  background: #101a30;
+}
+
+body.dark .flashcard-back {
+  background: linear-gradient(180deg, #162338, #101a30);
+}
+
+
+body.dark .btn-outline-secondary {
+  color: var(--text-dark);
+  border-color: #2e3a4d;
+}
+
+body.dark .btn-outline-secondary:hover {
+  background: #2e3a4d;
+}
+
+body.dark .text-muted,
+body.dark .small-muted {
+  color: var(--muted-dark) !important;
+}
+
+/* input and textarea */
+body.dark input,
+body.dark textarea {
+  background: #A9A9A9;
+  color: var(--text-dark);
+  border-color: #2e3a4d;
+}
+
+/* container width */
+.container { max-width: 980px; }
+
+/* flashcard flip */
+.flashcard { width: 100%; perspective: 1200px; }
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+.flashcard-face {
+  position: relative;
+  backface-visibility: hidden;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 120px;
+}
+.flashcard-front { background: var(--bg); }
+.flashcard-back {
+  background: linear-gradient(180deg,#f8f9fa,#e9ecef);
+  transform: rotateY(180deg);
+}
+
+/* helpers */
+.empty-state { text-align: center; padding: 40px; color: var(--muted); }
+.small-muted { font-size: 0.85rem; color: var(--muted); }
+kbd { background: #f1f3f5; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; }
+.note-item { white-space: pre-wrap; }
+
+
+body {
+  background-image: url('../images/backgroundLight.jpg'); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+
+body.dark {
+  background-image: url('../images/backgroundDark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ .footer-art {
+  width: 100%;
+  height: 200px;
+  background-image: url('../images/footer-art.png');
+  background-size: cover;      
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-top: 1px;             
+} 
+
+
+
+/* CARD DESIGN (warm note-style) */
+.card {
+  background-color: #ccbaad;  
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #532093; 
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Inner body */
+.card .card-body {
+  background-color: rgba(255, 255, 255, 0.55); 
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+/* Optional hover effect */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(205, 15, 15, 0.15);
+}
+
+/* DARK MODE VARIANT */
+body.dark .card {
+  background-color: #5e5c58; 
+  color: #fdf5e6; 
+}
+
+body.dark .card .card-body {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #EDE0D4;
+  color: #000000;
+}
+
+body.dark .navbar {
+  background-color: #A9A9A9 !important;  
+  color: #ffffff !important;
+}
+
+.navbar-logo {
+  height: 35px;    
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* body.dark .navbar-logo {
+  content: url('../images/logo-dark.png'); 
+} */
+
+
+/* darkMood footer */
+body.dark .footer-art {
+  background-image: url('../images/footer-art-dark.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}

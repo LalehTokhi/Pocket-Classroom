@@ -1,0 +1,22 @@
+{
+  "schema": "pocket-classroom/v1",
+  "id": "sample-1",
+  "meta": {
+    "title": "Learning to Code",
+    "subject": "Programming Basics",
+    "level": "Beginner",
+    "description": "A sample capsule about programming fundamentals."
+  },
+  "notes": [
+    "Programming is the process of writing instructions for computers to follow.",
+    "A variable stores data that can change during program execution."
+  ],
+  "flashcards": [
+    { "front": "What is a variable?", "back": "A storage location identified by a name that holds data." },
+    { "front": "What does a function do?", "back": "It executes a block of code when called." }
+  ],
+  "quiz": [
+    { "question": "What is the purpose of a variable?", "choices": ["To store data values", "To perform math operations", "To display text", "To connect to the internet"], "correctIndex": 0 }
+  ],
+  "updatedAt": "2025-10-10T00:00:00.000Z"
+}
